@@ -6,13 +6,15 @@ import com.lala.varun.department_ms_prac.mapper.DepartmentMapper;
 import com.lala.varun.department_ms_prac.repository.DepartmentRepository;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
 public class DepartmentService {
 
-    private final DepartmentRepository departmentRepository;
+    @Autowired
+    private  DepartmentRepository departmentRepository;
 
     public DepartmentDto saveDepartment(DepartmentDto departmentDto){
         Department department = DepartmentMapper.toEntity(departmentDto);
