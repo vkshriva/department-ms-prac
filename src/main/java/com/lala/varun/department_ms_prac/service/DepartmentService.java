@@ -4,13 +4,11 @@ import com.lala.varun.department_ms_prac.dto.DepartmentDto;
 import com.lala.varun.department_ms_prac.entity.Department;
 import com.lala.varun.department_ms_prac.mapper.DepartmentMapper;
 import com.lala.varun.department_ms_prac.repository.DepartmentRepository;
-import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@AllArgsConstructor
 public class DepartmentService {
 
     @Autowired
